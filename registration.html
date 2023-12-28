@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Registration</title>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="css/all.min.css" />
+        <!-- Main CSS -->
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <main class="vh-100 d-flex justify-content-center align-items-center text-center">
+            <div class="container">
+                <div class="login-box bg-white rounded p-4 rounded-4 mx-auto w-75">
+                    <h1 class="login-title fw-bold mb-3">Smart Login System</h1>
+                    <p class="login-desc fs-5">Registration</p>
+                    <div class="login-form mt-4">
+                        <div class="mb-3">
+                            <input type="text" class="form-control border-1 px-3 username" placeholder="Enter Your Name" name="username" required />
+                            <p class="errorMsg text-danger fs-6 text-start mt-1 error-name px-2"></p>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control border-1 px-3 email-registration" placeholder="Enter Your Email" name="email" required />
+                            <p class="errorMsg text-danger fs-6 text-start mt-1 px-2 error-email"></p>
+                        </div>
+                        <!-- Password -->
+                        <div class="mb-3 position-relative">
+                            <input type="password" class="form-control border-1 px-3 registration-pass" placeholder="Enter Your Password" name="password" required />
+                            <p class="errorMsg text-danger fs-6 text-start mt-1 px-2 error-pass"></p>
+                            <i class="fa-solid fa-eye position-absolute translate-middle-y d-none hide-pass-reg"></i>
+                            <i class="fa-solid fa-eye-slash position-absolute translate-middle-y show-pass-reg d-inline-block"></i>
+                        </div>
+                        <!-- Confirm Password -->
+                        <div class="mb-3 position-relative">
+                            <input type="password" class="form-control border-1 px-3 confirm-pass" placeholder="Confirm Your Password" name="confirmPass" required />
+                            <p class="errorMsg text-danger fs-6 text-start mt-1 px-2 error-confirm"></p>
+                            <i class="fa-solid fa-eye position-absolute translate-middle-y d-none hide-pass-conf"></i>
+                            <i class="fa-solid fa-eye-slash position-absolute translate-middle-y show-pass-conf d-inline-block"></i>
+                        </div>
+                        <div class="mb-3">
+                            <button class="btn p-0 account-create-btn border-3" type="submit">
+                                <a href="" class="fs-5 text-decoration-none py-2 px-5 d-inline-block account-create">Create Account</a>
+                            </button>
+                        </div>
+                        <p class="fs-5 sign-in-msg">
+                            Have an account?
+                            <a href="index.html" class="fs-5 signup-link fw-bold text-decoration-none text-capitalize">sign In</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

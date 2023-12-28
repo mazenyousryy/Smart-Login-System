@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Login</title>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="css/all.min.css" />
+        <!-- Main CSS -->
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <main class="vh-100 d-flex justify-content-center align-items-center text-center">
+            <div class="container">
+                <div class="login-box bg-white rounded p-4 rounded-4 mx-auto w-75">
+                    <h1 class="login-title fw-bold mb-3">Smart Login System</h1>
+                    <p class="loginDesc fs-5">Enter Your Account Email and Password to Login</p>
+                    <p class="not-exist-msg text-danger fs-5"></p>
+                    <div class="login-form mt-5">
+                        <p class="not-exist-msg text-danger fs-5"></p>
+                        <div class="mb-3">
+                            <input type="email" class="login-email form-control border-1 px-3" placeholder="Enter Your Email" name="email" />
+                        </div>
+                        <div class="mb-3 position-relative">
+                            <input type="password" class="login-pswrd form-control border-1 px-3" placeholder="Enter Your Password" name="password" />
+                            <i class="fa-solid fa-eye position-absolute translate-middle-y d-none hide-pass"></i>
+                            <i class="fa-solid fa-eye-slash position-absolute translate-middle-y show-pass d-inline-block"></i>
+                        </div>
+                        <div class="mb-3">
+                            <button class="btn login-btn p-0 border-3" type="submit">
+                                <a href="" class="login-a fs-5 text-decoration-none py-2 px-5 d-inline-block">Log In</a>
+                            </button>
+                        </div>
+                        <p class="fs-5 sign-up-msg">
+                            Don't have an account?
+                            <a href="registration.html" class="fs-5 signup-link text-capitalize text-decoration-none fw-bold">sign Up</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,73 @@
+:root {
+    --bg-color: #f8ede3;
+    --primary-color: #dfd3c3;
+    --secondary-color: #d0b8a8;
+    --tri-color: #7d6e83;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: "Open Sans", sans-serif;
+}
+
+/* Start Login */
+
+.login-title,
+input,
+.welcome-msg {
+    font-family: "Anton", sans-serif;
+    color: var(--tri-color);
+}
+
+.fa-eye,
+.fa-eye-slash {
+    right: 20px;
+    top: 20px;
+    color: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+
+input::placeholder,
+input,
+.form-control:focus {
+    color: var(--tri-color) !important;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 0.125rem var(--primary-color) !important;
+    border-color: transparent !important;
+}
+
+.login-btn,
+.account-create-btn {
+    background-color: var(--tri-color);
+    border-color: transparent;
+    transition: 0.3s all;
+}
+
+.login-btn a,
+.account-create-btn a {
+    color: white;
+}
+
+.login-btn a:hover,
+.account-create-btn a:hover {
+    color: var(--tri-color);
+}
+
+.login-btn:hover,
+.account-create-btn:hover {
+    background-color: transparent;
+    border-color: var(--secondary-color);
+}
+
+.signup-link {
+    color: var(--tri-color);
+    transition: color 0.3s;
+}
+
+.signup-link:hover {
+    color: var(--secondary-color);
+}
+
+/* End Login */
