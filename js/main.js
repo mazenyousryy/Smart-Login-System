@@ -132,11 +132,12 @@ if (registrationPassword !== null) {
 if (registrationCreateAccount !== null) {
     registrationCreateAccount.addEventListener("click", function (event) {
         if (validateName() === true && validateEmail() === true && validatePass() === true && confirmPass() === true) {
+            console.log("Here");
             if (isAccountExist() === true) {
                 event.preventDefault();
-                displayMsg(".errorEmail", `Exist Email, please enter another one`);
+                displayMsg(".email-registration", `Exist Email, please enter another one`);
             } else if (isAccountExist() !== true) {
-                displayMsg(".errorEmail", ``);
+                displayMsg(".email-registration", ``);
                 createAccount();
                 registrationCreateAccount.setAttribute("href", "../index.html");
             }
